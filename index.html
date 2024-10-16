@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+body{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+.main{
+width: 100% ;
+min-height: 100vh;
+position: absolute;
+background: url(/img/bg.jpg)center/cover no-repeat;
+overflow: hidden;
+
+}
+
+
+
+.contain{
+
+position: absolute;
+width: 100% ;
+height: 100%;
+top: 60%; 
+ left: 50%;
+ 
+  transform: translate(-50%, -50%);
+
+/* background: url(/img/bg.jpg)center/cover no-repeat; */
+}
+
+
+
+.header h2 {
+text-align: center;
+    background-color: orangered;
+    color: #fff;
+  font-family: "Courgette", cursive;
+  font-weight: 700;
+  font-style: normal;
+text-transform: capitalize;
+font-size: 1.4rem;
+padding:5px  10px;
+width: 180px;
+margin:  auto;
+border-radius:30px ;
+margin-top: 30px;
+transform: translateX(-15px);
+
+}
+
+.main-container{
+display: grid;
+margin: 0 auto;
+width: 100%;
+position: absolute;
+padding: 30px 0;
+top: 25;
+
+}
+
+
+.image-container {
+            width: 40%;
+           height: 280px;
+       
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            position: absolute;
+            transform: rotateZ(5deg);
+right: 48%;
+
+    border-radius: 20px;
+         
+        }
+
+
+
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+           opacity:0.8 ;
+object-fit: cover;
+border-radius: 20px;
+box-shadow: -4px 8px 10px rgba(0, 0, 0, 0.5);
+
+
+
+        }
+
+
+
+
+
+
+
+
+.info-container {
+            width: 30%;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            margin: 20px auto;
+            padding-bottom: 40px;
+   position: absolute;
+   right: 50%;
+   left: 48%;
+   background:linear-gradient(rgba(255, 255, 255, 1),rgba(59, 59, 59, 0.3)) ;
+z-index: 1;
+transform: rotateZ(-8deg);
+border-radius: 20px;
+
+box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);
+        }
+
+
+
+
+
+        .info-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: orangered;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.5rem;
+            text-transform: capitalize;
+
+
+
+        }
+        .info-container span {
+           color: black;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+        }
+        
+
+        .info-item {
+            display:flex ;
+            flex-direction: row;
+            margin-bottom: 5px;
+        }
+
+@media screen and (min-width: 470px) {
+
+
+.header h2{
+font-size: 1.7rem;
+width:220px;
+}
+
+    .info-container {
+            width: 160px;
+        
+   right: 50%;
+   left: 50%;
+   background:linear-gradient(rgba(255, 255, 255, 1),rgba(59, 59, 59, 0.3)) ;
+z-index: 1;
+transform: rotateZ(-8deg);
+border-radius: 20px;
+
+box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);
+        }
+
+
+        .info-container label {
+            font-size: 0.7rem;
+        }
+
+        .image-container {
+            width: 200px;
+           height: 340px;
+right: 48%;
+    border-radius: 20px;
+         
+        }
+
+
+
+
+
+
+
+    
+}
+
+
+@media screen and (min-width:600px) {
+    .contain{
+ 
+position: absolute;
+width: 100%;
+height: 100vh;
+ 
+ left: 45%;
+    }
+
+
+.info-container {
+        width: 200px;
+    
+right: 50%;
+left: 50%;
+background:linear-gradient(rgba(255, 255, 255, 1),rgba(59, 59, 59, 0.3)) ;
+z-index: 1;
+transform: rotateZ(-8deg);
+border-radius: 20px;
+
+box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);
+    }
+
+
+    .info-container label {
+        font-size: 0.78rem;
+    }
+
+    .image-container {
+        width: 210px;
+       height: 360px;
+right: 48%;
+border-radius: 20px;
+     
+    }
+
+
+}
+
+@media screen and (min-width:768px) {
+
+
+.info-container {
+        width: 230px;
+    
+right: 50%;
+left: 50%;
+background:linear-gradient(rgba(255, 255, 255, 1),rgba(59, 59, 59, 0.3)) ;
+z-index: 1;
+transform: rotateZ(-8deg);
+border-radius: 20px;
+
+box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);
+    }
+
+
+    .info-container label {
+        font-size: 0.9rem;
+    }
+
+    .image-container {
+        width: 220px;
+       height: 370px;
+right: 48%;
+border-radius: 20px;
+     
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+  </style>
+
+
+
+<body>
+    <div class="main">
+    <div class="contain">
+    <div class="header">   <h2>executives  bio</h2></div>
+    <div class="main-container">
+        
+    <div class="image-container">
+        <img src="/img/cheerful-international-student-holding-colorful-textbooks-indoor-photo-laughing-african-man-glasses-isolated.jpg" alt="Sample Image" id="sample-image">
+    </div>
+
+
+<div class="info-container">
+
+    <div class="info-item">
+        <label for="name">Name:
+        <span id="name">John Doe</span>
+    </label>
+    </div>
+
+    <div class="info-item">
+        <label for="units">unit/office served:
+        <span id="units"> bible study unit coordinator 2018 - 2020, prayer secretary 2020 - 2022,president 2022 - 2023</span>
+        </label>
+    </div>
+
+    <div class="info-item">
+        <label for="dob">Date of Birth:
+        <span id="dob"> April</span>
+    </label>
+    </div>
+
+
+
+    <div class="info-item">
+        <label for="favorite-quote">Favorite quote:
+        <span id="favorite-quote">it's all part of the process no down time...</span>
+    </label>
+    </div>
+
+    <div class="info-item">
+        <label for="hobbies">Hobbies:
+        <span id="hobbies">Reading,teaching,learning new things and movies</span>
+    </label>
+    </div>
+
+
+    <div class="info-item">
+        <label for="favorite-food">Favorite Food:
+        <span id="favorite-food">Pizza</span>
+    </label>
+    </div>
+
+
+    <div class="info-item">
+        <label for="best-moment">best moment in service:
+        <span id="best-moment"> every moment was special</span>
+    </label>
+    </div>
+    
+
+    <div class="info-item">
+        <label for="worst-moment">worst moment in service:
+        <span id="best-moment"> </span>
+    </label>
+    </div>
+    
+
+    <div class="info-item">
+        <label for="advice">advice to in-coming leaders:
+        <span id="advice">by all means learn,grow and become</span>
+    </label>
+    </div>
+    
+
+
+
+
+ 
+</div>
+
+
+
+
+</div>
+</div>
+</div>
+    </body>
+    </html>
+    
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
